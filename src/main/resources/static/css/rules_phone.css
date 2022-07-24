@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@media (max-width: 767px)
+{
+/* ========================================
+    メイン画像
+========================================= */
+
+#main_image  .top_img{
+    position: relative;
+    height: 40vh;
+  	margin-top: 20vh;
+    line-height: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	z-index: 1 ;
+  }
+
+
+#main_image span.top_txt {
+	top: 50px;
+	font-size: 10px;
+}
+	
+
+/* ========================================
+    yellow
+========================================= */
+
+#yellow h2{
+	font-size: 30px;
+}
+
+#yellow p{
+	font-size: 12px;
+}
+
+
+/* ========================================
+    white
+========================================= */
+
+#white h2{
+	font-size: 30px;
+}
+
+
+#white p{
+	font-size: 12px;
+}
+
+
+}
+
+/* ========================================
+    フッター
+========================================= */
+
+footer h1#footer_icon a{
+	font-size: 20px;
+}
+
+footer #footer_menu{
+	position: absolute;
+	width: 80%;
+    left: 70%;
+}
+
+footer #footer_menu ul li {
+	font-size: 15px;
+}

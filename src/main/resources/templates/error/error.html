@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OMIYAcappella 大宮アカペラプラットフォーム">
+    <meta name="keywords" content="OMIYAcappella, 埼玉, 大宮, アカペラ, プラットフォーム, サークル">
+    <meta name="format-detection" content="email=no,telephone=no,address=no">
+    <title>OMIYAcappella 大宮アカペラプラットフォーム</title>
+    <meta name="twitter:card" content="Summary Card">
+	<meta name="twitter:title" content="OMIYAcappella 大宮アカペラプラットフォーム">
+	<meta name="twitter:description" content="OMIYAcappella 大宮アカペラプラットフォーム">
+	<meta name="twitter:site" content="OMIYAcappella 大宮アカペラプラットフォーム">
+	<meta name="twitter:url" content="https://omiyacappella/home">
+	<meta name="twitter:image" content="https://omiyacappella/home">
+	<meta name="twitter:creator" content="">
+	<meta property="og:url" content="https://omiyacappella/home" />
+	<meta property="og:image" content="https://omiyacappella/home" />
+	<meta property="og:title" content="OMIYAcappella 大宮アカペラプラットフォーム" />
+	<meta property="og:site_name" content="OMIYAcappella 大宮アカペラプラットフォーム" />
+	<meta property="og:description" content="OMIYAcappella 大宮アカペラプラットフォーム" />
+	<meta property="og:type" content="website" />
+	<link rel="apple-touch-icon" sizes="114x114" th:href="@{/image/icon.jpg}" href="./image/icon.jpg">
+    <link rel="icon" type="image/x-icon" th:href="@{/image/icon.jpg}" href="./image/icon.jpg">
+    
+    
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet"  th:href="@{/css/common.css}" href="./css/common.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/header.css}" href="./css/header.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/footer.css}" href="./css/footer.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/home.css}" href="./css/home.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/home_phone.css}" href="./css/home_phone.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/home_tablet.css}" href="./css/home_tablet.css" type="text/css" media="screen">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- BootstrapのCSS読み込み -->
+    <link  th:href="@{/css/bootstrap.min.css}" href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script th:src="@{/js/jquery-3.5.1.min.js}" src="./js/jquery-3.5.1.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script th:src="@{/js/bootstrap.min.js}" src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+    
+        <h1 id="top_icon">
+        	<a th:href="@{/home/}" href="./home.html">OMIYAcappella</a>
+        </h1>
+        
+        
+        <div id="head" >
+        </div>
+
+
+
+
+        <!-- ハンバーガーメニュー -->
+        <nav>
+			<input type="checkbox" id="cp_navimenuid">
+			<label class="menu" for="cp_navimenuid">
+	
+				<div class="menubar">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+		
+				<ul>
+					<li><a id="home" th:href="@{/home/}" href="./home.html">Home</a></li>
+					<li><a id="rules" th:href="@{/rules/}" href="./rules.html">Rules</a></li>
+				</ul>
+	
+			</label>
+        </nav>
+
+    </header>
+    <!-- ヘッダー終わり -->
+    <br>
+    <br>
+    <br>
+    <br>  
+	<main>
+		<h3>エラー発生</h3>
+		<p>エラーが発生しました。</p>
+	</main>
+	
+	<!-- フッター -->
+	<footer>
+		<h1 id="footer_icon">
+        	<a th:href="@{/home/}" href="./home.html">OMIYAcappella</a>
+        </h1>
+	
+		<div id="footer_menu">
+			<ul>
+				<li><a id="home" th:href="@{/home/}" href="./home.html">Home</a></li>
+				<li><a id="rules" th:href="@{/rules/}" href="./rules.html">Rules</a></li>
+			</ul>
+		</div>
+	
+	</footer>
+	<!-- フッター終わり -->
+
+    <script th:src="@{/js/common.js}" src="./js/common.js"></script>
+    <script th:src="@{/js/start.js}" src="./js/start.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/* ========================================
+    ヘッダー
+========================================= */
+
+header h1#top_icon {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	z-index: 10 ;
+}
+
+header h1#top_icon a{
+	color: #5D535E;
+	font-size: 40px;
+	text-shadow: 2px 3px 2px rgba(0,0,0,0.1);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header h1#top_icon a:hover{
+	color: #BCBABE;
+}
+
+
+
+/* ========================================
+    スクロールボックス
+========================================= */
+
+
+/* アニメーション設定 */
+.arrowWrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  z-index: 10 ;
+}
+
+.arrowInner p {
+  font-size: 20px;
+  color: black;
+	font-weight: bold;
+	text-shadow: 2px 4px 4px rgba(0,0,0,0.4);
+  text-align: end;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.arrow {
+  width: 3px;
+  height: 100px;
+  margin: 60px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow::before {
+  content: '';
+  width: 8px;
+  height: 100px;
+  margin: 50px auto 0;
+  background-color: black;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  -webkit-animation: arrow 2.5s ease 0s infinite normal;
+  animation: arrow 2.5s ease 0s infinite normal;
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  60% {
+    -webkit-transform: translate3d(-50%, 100px, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-50%, 100px, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
+}
+
+/* ========================================
+    ハンバーガーメニュー
+========================================= */
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.menu {
+    position: fixed;
+	display: block;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	margin-left: auto;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	background-color: #ACD0C0;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+	top: 20px;
+	right: 15px;
+	z-index: 10 ;
+}
+.menu div.menubar {
+	width: 30px;
+	margin: 17px auto;
+}
+.menu div.menubar .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	margin-top: 3px;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+	opacity: 0;
+}
+.menu ul li {
+	display: inline-block;
+}
+.menu ul li a {
+	display: inline-block;
+	padding: 0.7em 0.5em;
+	-webkit-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+	text-decoration: none;
+	color: #1b2538;
+	border-bottom: 4px solid transparent;
+	height: 56px;
+	line-height: 2em;
+}
+.menu ul li a:hover {
+	color: #ffffff;
+	background-color: #ACD0C0;
+}
+.menu ul li a:target {
+	border-bottom-color: #ACD0C0;
+}
+/* クリックした時の動き */
+#cp_navimenuid {
+	display: none;
+}
+#cp_navimenuid:checked ~ .menu {
+	width: 60%;
+	height: 60px;
+	border-radius: 5px;
+	background-color: #E1FAF4;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+}
+#cp_navimenuid:checked ~ .menu > ul {
+	display: block;
+	opacity: 1;
+}
+#cp_navimenuid:checked ~ .menu > .menubar {
+	display: none;
+}
+
+
+@media (max-width: 767px)
+{
+/* ========================================
+    ヘッダー
+========================================= */
+
+header h1#top_icon{
+	top: 0px;
+}	
+
+header h1#top_icon a{
+	font-size: 25px;
+}	
+
+/* ========================================
+    スクロールボックス
+========================================= */
+
+.arrowInner p {
+  font-size: 10px;
+}
+}
+
+@media (max-width: 1020px) and (min-width: 768px)
+{
+/* ========================================
+    ヘッダー
+========================================= */
+
+
+header h1#top_icon{
+	top: 5px;
+}	
+
+header h1#top_icon a{
+	font-size: 33px;
+}	
+
+/* ========================================
+    スクロールボックス
+========================================= */
+
+.arrowInner p {
+  font-size: 13px;
+}
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OMIYAcappella 大宮アカペラプラットフォーム">
+    <meta name="keywords" content="OMIYAcappella, 埼玉, 大宮, アカペラ, プラットフォーム, サークル">
+    <meta name="format-detection" content="email=no,telephone=no,address=no">
+    <title>OMIYAcappella 大宮アカペラプラットフォーム</title>
+    <meta name="twitter:card" content="Summary Card">
+	<meta name="twitter:title" content="OMIYAcappella 大宮アカペラプラットフォーム">
+	<meta name="twitter:description" content="OMIYAcappella 大宮アカペラプラットフォーム">
+	<meta name="twitter:site" content="OMIYAcappella 大宮アカペラプラットフォーム">
+	<meta name="twitter:url" content="https://omiyacappella/home">
+	<meta name="twitter:image" content="https://omiyacappella/home">
+	<meta name="twitter:creator" content="">
+	<meta property="og:url" content="https://omiyacappella/home" />
+	<meta property="og:image" content="https://omiyacappella/home" />
+	<meta property="og:title" content="OMIYAcappella 大宮アカペラプラットフォーム" />
+	<meta property="og:site_name" content="OMIYAcappella 大宮アカペラプラットフォーム" />
+	<meta property="og:description" content="OMIYAcappella 大宮アカペラプラットフォーム" />
+	<meta property="og:type" content="website" />
+	<link rel="apple-touch-icon" sizes="114x114" th:href="@{/image/icon.jpg}" href="./image/icon.jpg">
+    <link rel="icon" type="image/x-icon" th:href="@{/image/icon.jpg}" href="./image/icon.jpg">
+    
+    
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet"  th:href="@{/css/common.css}" href="./css/common.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/header.css}" href="./css/header.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/footer.css}" href="./css/footer.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/rules.css}" href="./css/rules.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/rules_tablet.css}" href="./css/rules_tablet.css" type="text/css" media="screen">
+    <link rel="stylesheet"  th:href="@{/css/rules_phone.css}" href="./css/rules_phone.css" type="text/css" media="screen">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- BootstrapのCSS読み込み -->
+    <link  th:href="@{/css/bootstrap.min.css}" href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script th:src="@{/js/jquery-3.5.1.min.js}" src="./js/jquery-3.5.1.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script th:src="@{/js/bootstrap.min.js}" src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+    
+        <h1 id="top_icon">
+        	<a th:href="@{/home/}" href="./home.html">OMIYAcappella</a>
+        </h1>
+        
+        
+        <div id="head" >
+        </div>
+
+
+        <!-- スクロールボックス -->
+		<div class="scrollBox">
+		  <div class="arrowWrap">
+		    <div class="arrowInner">
+		      <p>SCROLL DOWN</p>
+		      <div class="arrow"></div>
+		    </div>
+		  </div>
+		</div>
+
+
+        <!-- ハンバーガーメニュー -->
+        <nav>
+			<input type="checkbox" id="cp_navimenuid">
+			<label class="menu" for="cp_navimenuid">
+	
+				<div class="menubar">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+		
+				<ul>
+					<li><a id="home" th:href="@{/home/}" href="./home.html">Home</a></li>
+					<li><a id="rules" th:href="@{/rules/}" href="./rules.html">Rules</a></li>
+				</ul>
+	
+			</label>
+        </nav>
+
+    </header>
+    <!-- ヘッダー終わり -->
+
+	<main>
+		
+	    <!-- メイン画像 -->
+		<section id="main_image">
+	    
+	    	<div class="top_img" th:style="'background-image: url(' + @{/image/rules.png} + ');'" style="background-image: url(./image/rules.png);">
+			</div>
+	      
+			<span class="top_txt">
+	          		楽しく、いつでも、アカペラを、大宮で
+	        </span>
+	
+	
+	    </section>
+	    <!-- メイン画像終わり -->
+	
+	    <!-- 本文ラッパー -->
+	    <div id="body_wrapper" class="cf">
+	
+	        <section id="yellow" class="fadein">
+					<h2>活動</h2>
+
+					<p>・グループ内のやり取りはLINEグループを活用<br>
+						・一日もしくは短期の企画バンドのみ<br>
+						・練習は、<br>
+						「△△の曲歌いたいのですが誰か集まりませんか？」<br>
+						「○○日にアカペラ誰かしませんか？」<br>
+						「××イベントに出たいのですが、短期バンド組みませんか？」<br>
+						という形で募集をかけて行う。(LINEグループメンバ誰でも募集OK)<br>
+						・LINEグループ内で長期バンド(固定バンド)を組むのは禁止<br>
+						  グループ外で個別でやりとりして長期バンドを組むのまでは制限しない<br>
+						・何かのイベントに向けた短期バンド結成は〇</p>
+
+	        </section>
+
+
+	        <section id="white" class="fadein">
+
+					<h2>練習場所</h2>
+					<p>・大宮のスタジオもしくはカラオケ、公園に限る<br>
+						（大宮以外にも拡げると、他の社会人サークルと区別つかなくなるので<br>
+						敢えて狭めている）<br>
+						・但し、イベント参加にて、イベント前に会場近くで練習、といったものは例外的にOK</p>
+	        </section>
+	        
+	        <section id="yellow" class="fadein">
+					<h2>練習のキャンセルについて</h2>
+
+					<p>・急な予定により都合がつかなくなった場合、練習の前日までにはメンバーへ連絡<br>
+						・もし当日体調悪くなった場合、練習の2時間前までにはメンバーへ連絡<br>
+						・上記を守らない場合は強制退会の対象となる</p>
+	        </section>
+
+
+	        <section id="white" class="fadein">
+
+					<h2>練習の中身について</h2>
+					<p>・練習の進め方は特に指定ないが、あくまでコンセプトは<br>
+						「楽しくアカペラを」である。そのため練習中に、キレる、個人を<br>
+						異様に責める、といったことのないようにする<br>
+						・「音取りがしてある」状態で練習に臨むようにする</p>
+	        </section>	  
+
+	        <section id="yellow" class="fadein">
+					<h2>その他</h2>
+
+					<p>・本LINEグループにいる方と、個別でLINEのやり取り等することは自由だが、常識の範囲内で行う。何かトラブルあった場合、問題のある方を退会させる可能性あり<br>
+						・LINEグループ全体に対してのご飯や飲み、カラオケ等々の募集OK<br>
+						・宗教やビジネスの勧誘NG<br>
+						・別で、他のバンド組んでたり、別のサークル入っているのは特に問題なし</p>
+	        </section>
+
+	        <section id="white" class="fadein">
+
+					<br>
+					<br>
+					<br>										
+	        </section>	 
+      
+	        
+	    </div>
+	    <!-- 本文ラッパー終わり -->
+
+
+	</main>
+	
+	<!-- フッター -->
+	<footer>
+		<h1 id="footer_icon">
+        	<a th:href="@{/home/}" href="./home.html">OMIYAcappella</a>
+        </h1>
+	
+		<div id="footer_menu">
+			<ul>
+				<li><a id="home" th:href="@{/home/}" href="./home.html">Home</a></li>
+				<li><a id="rules" th:href="@{/rules/}" href="./rules.html">Rules</a></li>
+			</ul>
+		</div>
+	
+	</footer>
+	<!-- フッター終わり -->
+
+    <script th:src="@{/js/common.js}" src="./js/common.js"></script>
+
+
+</body>
+</html>

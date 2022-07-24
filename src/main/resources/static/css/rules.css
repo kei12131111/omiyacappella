@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+/* ========================================
+    メイン画像
+========================================= */
+
+
+#main_image  .top_img{
+    position: relative;
+    width: 100%;
+    height: 0;
+    /* (画像の高さ / 画像の横幅) × 100 */
+    padding-top: 55.6666666667%;
+    line-height: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	z-index: 1 ;
+  }
+
+
+
+
+#main_image span.top_txt {
+	position: absolute;/*絶対配置*/
+	color: #5D535E;
+	font-weight: bold;
+	font-size: 20px;
+	top: 70px;
+	left: 10px;
+	z-index: 2 ;
+}
+
+/* ========================================
+    メインボディ
+
+
+div#body_wrapper {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+========================================= */
+
+/* ========================================
+    yellow
+========================================= */
+#yellow{
+	width: 100%;
+	height: auto; 
+	background-color: #FFFAE1; 
+	float: left;
+}
+
+#yellow h2{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 50px;
+	text-align:center;
+}
+
+#yellow p{
+	display: block;
+	font-size: 20px;
+	margin-left: 40px;
+	text-align:left;
+}
+
+
+
+
+/* ========================================
+    white
+========================================= */
+#white{
+	width: 100%;
+	height: auto; 
+	float: left;
+}
+
+#white h2{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 50px;
+	text-align:center;
+}
+
+#white p{
+	display: block;
+	font-size: 20px;
+	margin-left: 40px;
+	text-align:left;
+}
+
+
